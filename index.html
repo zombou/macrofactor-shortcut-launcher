@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Open MacroFactor meal shortcut</title>
+<style>
+body{font:16px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#10141c;color:white;min-height:100svh;margin:0;display:grid;place-items:center}
+main{max-width:420px;margin:20px;padding:28px;border:1px solid #394454;border-radius:20px;background:#1d2531;text-align:center}
+a{display:block;background:#2485ff;color:white;padding:16px;margin:22px 0 12px;border-radius:14px;text-decoration:none;font-weight:700}
+p{line-height:1.5;color:#c5cdd8}
+small{color:#aab4c3}
+</style>
+</head>
+<body>
+<main>
+<h1>Log ChatGPT Meal</h1>
+<p>Attempting to open your local MacroFactor logging Shortcut.</p>
+<a id="launch" href="shortcuts://run-shortcut?name=Log%20ChatGPT%20Meal">Open Shortcut</a>
+<small>If nothing happens automatically, tap the button. Your meal data stays in your iPhone clipboard.</small>
+</main>
+<script>
+window.addEventListener('load', () => {
+ setTimeout(() => { window.location.href = document.getElementById('launch').href; }, 250);
+});
+</script>
+</body>
+</html>
